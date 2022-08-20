@@ -41,16 +41,19 @@ module.exports = {
     Chain: 'astar',
     CoinGeckoID: 'sirius-finance',
     Pools: {
+        // base-pools
         [usdPoolAddress]: [DAI, USDC, USDT, BUSD],
+        [StarlayPoolAddress]: [LDAI, LUSDC, LUSDT, LBUSD],
+        [nASTRPoolAddress]: [nASTR, wASTR],
+        [AvaultPoolAddress]: [aBaiUsdc, aDaiUsdc, aBusdUsdc, aUsdtUsdc],
+
+        // meta-pools
         [oUSDPoolAddress]: [oUSD],
         [BAIPoolAddress]: [BAI],
-        [StarlayPoolAddress]: [LDAI, LUSDC, LUSDT, LBUSD],
         [JPYCPoolAddress]: [JPYC],
         [WBNBPoolAddress]: [WBNB],
         [WBTCPoolAddress]: [WBTC],
         [WETHPoolAddress]: [WETH],
-        [nASTRPoolAddress]: [nASTR, wASTR],
-        [AvaultPoolAddress]: [aBaiUsdc, aDaiUsdc, aBusdUsdc, aUsdtUsdc],
     },
     SRS, nASTR,
     VotingEscrow,
